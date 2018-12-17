@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #header {
+            margin: auto;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: "Tahoma", monospace;
+            text-align: center;
+            color: #dedfe0;
+            background: #8c6fb7;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 800px;            
+        }
+        #pyramid {
+            text-align: center;
+            line-height: 0;
+            background: #e2dee8;
+            font-size: 20px;
+            color: #8c6fb7;
+            width: 694px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        #numberSelected {
+            font-weight: bold;
+        }
+        table {
+            width: 800px;
+            vertical-align: middle;
+            font-size: 18px;
+            font-family: "Courier New", monospace;            
+            text-align: center;
+            margin: auto;
+            border: 3px solid #2b2b2c;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding-top: 20px;
+        }
+        body {
+            margin: auto;
+            vertical-align: middle;
+            font-family: "Courier New", monospace;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 700px;
+        }
+    </style>
+</head>
+<body >
+    <br>
+    <br>
+    <h1 id="header">Pyramid Slide</h1>
+    <br>
+        <table id="table">
+            <tr>
+                <td id="title"><span>Brick symbol:
+                    <select id="brickSymbol">
+                        <option value="#">&#35;</option>
+                        <option value="@">&#64;</option>
+                        <option value="X">X</option>
+                        <option value="$">&#36;</option>
+                    </select>
+                    </span>
+                </td>
+                <td id="title"><span>How high?
+                <input type="range" id="rangeSlider" min="1" max="20">
+                    <span id="numberSelected"></span>
+                    </span>
+                </td>
+            </tr>
+            <tr></tr><tr></tr><tr></tr><tr></tr>
+                <td colspan="2" id="pyramid"></td>
+            </tr>
+        </table>
+    <script src="pyramid-slide.js"></script>
+</body>
+</html>
